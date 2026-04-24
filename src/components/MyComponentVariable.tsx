@@ -22,3 +22,4 @@ return <div>{text}</div>
 
 export default MyComponentVariable;
 
+//просто хочу закомитить
