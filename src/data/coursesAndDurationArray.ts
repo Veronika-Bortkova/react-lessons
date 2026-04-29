@@ -6,5 +6,7 @@ export const coursesAndDurationArray:ICourseAndDuration[] = [
     {title: 'Python Complex', monthDuration: 6},
     {title: 'QA Complex', monthDuration: 4},
     {title: 'FullStack', monthDuration: 7},
-    {title: 'Frontend', monthDuration: 4}
+    {title: 'Frontend', monthDuration: 4},
+    {title: 'Frontend--', monthDuration: 5}
+
 ];
