@@ -6,6 +6,7 @@ import {getUsers} from "../services/api.service.ts";
 
 const UsersArrComponents = () => {
     const [users, setUsers] = useState<IUser[]>([]);
+    const [item, setItem] = useState<IUser|null>(null);
     useEffect(() => {
         getUsers()
         .then(response => {
@@ -13,13 +14,18 @@ const UsersArrComponents = () => {
 
         });
     }, []);
+    const foo = (item:IUser) =>{
+        setItem(item);
+    }
 
 
     return (
-        <div>
-            {users.map(value => <UserComponent key = {value.id} item={value}/>)}
+        <>
 
-        </div>
+            {item && <div>{item.id}, {item.name}, {item.phone}</div>}
+            <div>{users.map(value => <UserComponent key = {value.id} foo={foo} item={value}/>)}</div>
+
+        </>
     );
 };
 
