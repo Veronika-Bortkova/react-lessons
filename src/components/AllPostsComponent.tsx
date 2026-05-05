@@ -3,6 +3,7 @@ import {getPosts} from "../services/getPosts.ts";
 import type {IPost} from "../models/UserpostModel.ts";
 import PostComponent from "./PostComponent/PostComponent.tsx";
 
+
 const AllPostsComponent = () => {
     const [posts, setPosts] = useState<IPost[]>([]);
     useEffect(() => {
