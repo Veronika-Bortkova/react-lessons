@@ -1,0 +1,7 @@
+.block {
+    background: #cbffff;
+    border-radius: 5px;
+    border: silver 2px solid;
+    padding: 15px;
+    margin: 10px;
+}
