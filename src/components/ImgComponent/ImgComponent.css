@@ -1,0 +1,17 @@
+.swiper{
+    width: 400px;
+
+
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-navigation-icon{
+    color: #919191;
+}
+
+.swiper

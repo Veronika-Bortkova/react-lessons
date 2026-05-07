@@ -1,0 +1,54 @@
+.imgProduct{
+    max-width: 70%;
+    height: auto;
+
+
+}
+.thumbnail{
+    width: 80px;
+}
+
+.imgBlock{
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;: ;
+
+}
+.TopBlock{
+    display: flex;
+}
+h3{
+    margin-top: 25px;
+    text-align: center;
+}
+
+.block{
+    margin: 30px;
+}
+
+.reviews{
+    display: flex;
+    justify-content: start;
+    gap: 15px;
+}
+
+.reviewsBlock{
+    border-radius: 10px;
+    background: #f6f6f6;
+    padding: 10px;
+    border: 2px silver solid;
+}
+h5{
+    margin-bottom: 15px;
+}
+.block{
+    border-bottom: 3px silver solid;
+    padding-bottom: 15px;
+}
+
+.teg{
+    margin-right: 12px;
+}
+.description{
+    text-align: justify;
+}
