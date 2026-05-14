@@ -8,7 +8,7 @@ type propUserType ={
 const UserComponent:FC<propUserType>= ({item}) => {
    const navigate = useNavigate();
    const handleOnclick = ()=>{
-       navigate("datails", {state: item})
+       navigate("posts/" + item.id, {state: item})
    };
     return (
         <div>
