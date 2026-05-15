@@ -5,7 +5,7 @@ const Layout = () => {
     return (
         <div>
             <Menu/>
-            <br/>
+            <hr/>
             <Outlet/>
         </div>
     );
