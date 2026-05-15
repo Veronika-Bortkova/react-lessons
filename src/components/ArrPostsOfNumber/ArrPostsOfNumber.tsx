@@ -13,7 +13,7 @@ const ArrPostsOfNumber = () => {
     }, []);
     return (
         <div>
-            {postsOfNumers.map(value => <PostOfNumber key={value.id} PostOfNumberProps={value}/>)}
+            {postsOfNumers.map(value => <PostOfNumber key={value.id} PostOfNumberA={value}/>)}
         </div>
     );
 };

@@ -6,6 +6,7 @@ import PostPage from "../pages/PostPage.tsx";
 import { createBrowserRouter} from "react-router-dom";
 import SinglUserDatailsPage from "../pages/SinglUserDatailsPage.tsx";
 import PostsPage from "../pages/PostsPage.tsx";
+import PostsSingleUsersPage from "../pages/PostsSingleUsersPage.tsx";
 
 export const routes = createBrowserRouter([
     {path: "", element: <Layout/>,
@@ -15,7 +16,9 @@ export const routes = createBrowserRouter([
                     {path: "posts/:userId", element: <PostPage/>},
                 ]},
             {path: "users/datails", element:<SinglUserDatailsPage/>},
-            {path: "posts", element: <PostsPage/>}
+            {path: "posts", element: <PostsPage/>, children:[
+                    {path: "postsOfSingleUser/:userId", element: <PostsSingleUsersPage/>}
+                ]}
         ]
     }
 ])

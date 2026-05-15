@@ -1,17 +1,22 @@
 import type {FC} from "react";
 import type {IPost} from "../models/PostModel.ts";
+import {useNavigate} from "react-router-dom";
 type PostOfNumberProps = {
-    PostOfNumberProps: IPost;
+    PostOfNumberA: IPost;
 }
 
-const PostOfNumber:FC<PostOfNumberProps> = ({PostOfNumberProps}) => {
+const PostOfNumber:FC<PostOfNumberProps> = ({PostOfNumberA}) => {
+    const navigate1 = useNavigate();
+    const handleOnclick1 = () =>{
+        navigate1("/posts/postsOfSingleUser/" + PostOfNumberA.userId, {state: PostOfNumberA})
+    }
     return (
         <div>
-            <p>Post №{PostOfNumberProps.id}</p>
-            <p>Uzer Id - {PostOfNumberProps.userId}</p>
-            <h2>{PostOfNumberProps.title}</h2>
-            <p>{PostOfNumberProps.body}</p>
-            <button>Posts of user №{PostOfNumberProps.userId} </button>
+            <p>Post №{PostOfNumberA.id}</p>
+            <p>Uzer Id - {PostOfNumberA.userId}</p>
+            <h2>{PostOfNumberA.title}</h2>
+            <p>{PostOfNumberA.body}</p>
+            <button onClick={handleOnclick1}>Posts of user №{PostOfNumberA.userId} </button>
             <hr/>
         </div>
     );
