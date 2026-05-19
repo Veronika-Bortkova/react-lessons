@@ -11,7 +11,7 @@ export const router = createBrowserRouter([
             {path:"users/jsonplaceholder", element:<UsersJsonplaceholderPage/> },
             {path:"posts/jsonplaceholder", element:<PostsJsonplaceholderPage/> },
             {path:"posts/dummyjson", element:<PostsDummyjsonPage/> },
-            {path:"comments/jsonplaceholder", element:<CommentsJsonplaceholderPage/> },
+            {path:"comments/jsonplaceholder", element:<CommentsJsonplaceholderPage/> }
 
 
 
