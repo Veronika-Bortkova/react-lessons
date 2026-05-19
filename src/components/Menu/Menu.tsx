@@ -1,17 +1,14 @@
-import {Link} from "react-router-dom" ;
+import {Link} from "react-router-dom";
 
 const Menu = () => {
     return (
-        <ul>
-            <li><Link to={"users/jsonplaceholder"}>Users Jsonplaceholder</Link></li>
-            <li><Link to={"posts/jsonplaceholder"}>Posts Jsonplaceholder</Link></li>
-            <li><Link to={"posts/dummyjson"}>Posts Dummyjson</Link></li>
-            <li><Link to={"comments/jsonplaceholder"}>Posts Dummyjson</Link></li>
+
+            <ul>
+                <li><Link to={""}>Home</Link></li>
+                <li><Link to={"users/jsonplaceholde"}>Users jsonplaceholde </Link></li>
+            </ul>
 
 
-
-
-        </ul>
     );
 };
 
