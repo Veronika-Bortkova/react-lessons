@@ -5,6 +5,7 @@ import UsersJsonplaceholderPage from "../Pages/UsersJsonplaceholderPage.tsx";
 import UsersDummyjsonPage from "../Pages/UsersDummyjsonPage.tsx";
 import PostsJsonplaceholderPage from "../Pages/PostsJsonplaceholderPage.tsx";
 import PostsDummyjsonPage from "../Pages/PostsDummyjsonPage.tsx";
+import CommentsJsonplaceholderPage from "../Pages/CommentsJsonplaceholderPage.tsx";
 
 export const routes = createBrowserRouter([
     {path:"/", element:<Layout/>,
@@ -14,7 +15,8 @@ export const routes = createBrowserRouter([
                 {path:"users/dummyjson", element: <UsersDummyjsonPage/>},
                 {path:"posts/jsonplaceholder", element: <PostsJsonplaceholderPage/>},
                 {path:"posts/dummyjson", element: <PostsDummyjsonPage/>},
+                {path:"comments/jsonplaceholder", element: <CommentsJsonplaceholderPage/>},
 
-                
+
             ]}
 ])
