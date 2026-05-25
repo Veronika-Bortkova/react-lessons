@@ -1,6 +1,6 @@
 import UsersJsonplaceholder from "../components/UsersJsonplaceholder/UsersJsonplaceholder.tsx";
 
-const UsersJsonplaceholdePage = () => {
+const UsersJsonplaceholderPage = () => {
     return (
         <div>
             <UsersJsonplaceholder/>
@@ -8,4 +8,4 @@ const UsersJsonplaceholdePage = () => {
     );
 };
 
-export default UsersJsonplaceholdePage;
+export default UsersJsonplaceholderPage;

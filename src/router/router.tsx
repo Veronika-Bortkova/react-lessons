@@ -1,11 +1,17 @@
 import {createBrowserRouter} from "react-router-dom"
 import Layout from "../Layouts/Layout.tsx";
 import HomePages from "../Pages/HomePages.tsx";
-import UsersJsonplaceholdePage from "../Pages/UsersJsonplaceholdePage.tsx";
+import UsersJsonplaceholderPage from "../Pages/UsersJsonplaceholderPage.tsx";
+import UsersDummyjsonPage from "../Pages/UsersDummyjsonPage.tsx";
+import PostsJsonplaceholderPage from "../Pages/PostsJsonplaceholderPage.tsx";
 
 export const routes = createBrowserRouter([
-    {path:"", element:<Layout/>,
+    {path:"/", element:<Layout/>,
             children:[
                 {index: true, element:<HomePages/> },
-                {path:"users/jsonplaceholde", element: <UsersJsonplaceholdePage/>}]}
+                {path:"users/jsonplaceholder", element: <UsersJsonplaceholderPage/>},
+                {path:"users/dummyjson", element: <UsersDummyjsonPage/>},
+                {path:"posts/jsonplaceholder", element: <PostsJsonplaceholderPage/>},
+                
+            ]}
 ])
