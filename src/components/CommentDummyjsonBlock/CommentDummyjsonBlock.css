@@ -1,0 +1,9 @@
+
+.CommentDummyBlockClass{
+    display: flex;
+    flex-direction: column;
+    background: #e1feff;
+    padding: 15px;
+    margin: 20px;
+    gap: 10px;
+}

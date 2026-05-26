@@ -11,4 +11,5 @@ const baseURLJsonplaceholder = "https://jsonplaceholder.typicode.com";
  export const urlDummyjson = {
      ObjArrUsersDummy: baseURLurlDummyjson + "/users",
      arrPostsDummy: baseURLurlDummyjson + "/posts",
+     arrCommentsDummy: baseURLurlDummyjson + "/comments",
 }
