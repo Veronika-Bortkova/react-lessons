@@ -5,11 +5,11 @@ import PostDummyBlock from "../PostDummyBlock/PostDummyBlock.tsx";
 import type {IPostDummy} from "../../models/PostDummyModel.ts";
 
 const PostsDummyjson = () => {
-    const  [arrPostsDummyjson, SetarrPostsDummyjson] = useState<IPostDummy[]>([]);
+    const  [arrPostsDummyjson, setArrPostsDummyjson] = useState<IPostDummy[]>([]);
     useEffect(() => {
         usersDumyService.getPostsDummy()
             .then(posts => {
-                SetarrPostsDummyjson(posts.posts);
+                setArrPostsDummyjson(posts.posts);
             })
 
     }, []);

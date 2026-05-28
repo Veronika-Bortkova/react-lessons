@@ -4,11 +4,11 @@ import {usersService} from "../../services/Api.Jsonplaceholder.ts";
 import UserBlock from "../UserBlock/UserBlock.tsx";
 
 const UsersJsonplaceholder = () => {
-    const [arrUsersJsonplaceholder, SetarrUsersJsonplaceholder] = useState<IUser[]>([]);
+    const [arrUsersJsonplaceholder, setArrUsersJsonplaceholder] = useState<IUser[]>([]);
     useEffect(()=>{
         usersService.getUsers()
             .then(arrUsers =>
-            SetarrUsersJsonplaceholder(arrUsers))
+            setArrUsersJsonplaceholder(arrUsers))
 
     }, []);
 

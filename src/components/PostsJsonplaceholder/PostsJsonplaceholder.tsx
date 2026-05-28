@@ -4,11 +4,11 @@ import {usersService} from "../../services/Api.Jsonplaceholder.ts";
 import PostBlock from "../PostBlock/PostBlock.tsx";
 
 const PostsJsonplaceholder = () => {
-    const [arrPostsJsonplaceholder, SetarrPostsJsonplaceholder] = useState<IPostJsonplaceholder[]>([]);
+    const [arrPostsJsonplaceholder, setArrPostsJsonplaceholder] = useState<IPostJsonplaceholder[]>([]);
     useEffect(() => {
         usersService.getPosts()
             .then(posts => {
-                SetarrPostsJsonplaceholder(posts);
+                setArrPostsJsonplaceholder(posts);
             })
 
     }, []);

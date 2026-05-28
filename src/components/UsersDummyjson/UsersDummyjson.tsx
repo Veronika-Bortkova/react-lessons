@@ -5,11 +5,11 @@ import UserDummyBlock from "../userDummyBlock/userDummyBlock.tsx";
 
 const UsersDummyjson = () => {
 
-    const [arrUsersDummyjson, SetarrUsersDummyjson] = useState<IUserDummy[]>([]);
+    const [arrUsersDummyjson, setArrUsersDummyjson] = useState<IUserDummy[]>([]);
     useEffect(() => {
         usersDumyService.getUsersDumy()
             .then(objDumy => {
-                SetarrUsersDummyjson(objDumy.users)
+                setArrUsersDummyjson(objDumy.users)
             })
 
     }, []);
