@@ -1,0 +1,7 @@
+.ProductBlock{
+    border: silver 2px solid;
+    margin: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 10px;
+}
