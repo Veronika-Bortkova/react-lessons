@@ -5,11 +5,11 @@ import CommentsJsonplaceholderBlock from "../CommentsJsonplaceholderBlock/Commen
 
 
 const CommentsJsonplaceholder = () => {
-    const[arrCommentsJsonplaceholder, SetarrCommentsJsonplaceholder] = useState<ICommentJsonplaceholder[]>([]);
+    const[arrCommentsJsonplaceholder, setArrCommentsJsonplaceholder] = useState<ICommentJsonplaceholder[]>([]);
     useEffect(() => {
         usersService.getComments()
             .then(posts =>{
-                SetarrCommentsJsonplaceholder(posts);
+                setArrCommentsJsonplaceholder(posts);
             })
 
     }, []);
