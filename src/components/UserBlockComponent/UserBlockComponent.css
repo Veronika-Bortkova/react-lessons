@@ -1,0 +1,18 @@
+button{
+
+    background: transparent; /* Убирает серый фон */
+    border: silver 2px solid;
+    padding: 10px;
+    margin: 10px;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;         /* Возвращает палец-курсор при наведении */
+    outline: none;           /* Убирает обводку при фокусе/клике в некоторых браузерах */
+    box-shadow: none;        /* Убирает любые дефолтные тени */
+    appearance: none;
+    width: 280px;
+    border-radius: 5px;
+
+
+
+}
