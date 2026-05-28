@@ -1,12 +1,12 @@
 import type {ICommentDummyjson} from "../../models/CommentDummyjsonModel.ts";
 import type {FC} from "react";
-import "./CommentDummyjsonBlock.css"
+import "./CommentDummyjsonBlockComponent.css"
 
 type CommentDummyjsonBlockPropsType = {
     comment: ICommentDummyjson;
 }
 
-const CommentDummyjsonBlock:FC<CommentDummyjsonBlockPropsType> = ({comment}) => {
+const CommentDummyjsonBlockComponent:FC<CommentDummyjsonBlockPropsType> = ({comment}) => {
     return (
         <div className={"CommentDummyBlockClass"}>
             <h2>{comment.body}</h2>
@@ -16,4 +16,4 @@ const CommentDummyjsonBlock:FC<CommentDummyjsonBlockPropsType> = ({comment}) => 
     );
 };
 
-export default CommentDummyjsonBlock;
+export default CommentDummyjsonBlockComponent;

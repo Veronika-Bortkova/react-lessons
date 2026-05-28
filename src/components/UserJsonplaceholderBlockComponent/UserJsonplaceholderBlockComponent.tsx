@@ -1,12 +1,12 @@
 import type {IUser} from "../../models/UsersJsonplaceholderModel.ts";
 import type {FC} from "react";
-import "./UserBlock.css"
+import "./UserJsonplaceholderBlockComponent.css"
 
 type UserPropsType = {
     user:IUser
 }
 
-const UserBlock:FC<UserPropsType> = ({user}) => {
+const UserJsonplaceholderBlockComponent:FC<UserPropsType> = ({user}) => {
     return (
         <div className={"UserBlockClass"}>
             <h2>{user.name}</h2>
@@ -17,4 +17,4 @@ const UserBlock:FC<UserPropsType> = ({user}) => {
     );
 };
 
-export default UserBlock;
+export default UserJsonplaceholderBlockComponent;

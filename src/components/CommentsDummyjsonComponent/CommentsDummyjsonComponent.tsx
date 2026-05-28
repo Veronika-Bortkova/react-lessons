@@ -1,9 +1,9 @@
 import {useEffect, useState} from 'react';
 import {usersDumyService} from "../../services/Api.Dummyjson.ts";
 import type {ICommentDummyjson} from "../../models/CommentDummyjsonModel.ts";
-import CommentDummyjsonBlock from "../CommentDummyjsonBlock/CommentDummyjsonBlock.tsx";
+import CommentDummyjsonBlockComponent from "../CommentDummyjsonBlockComponent/CommentDummyjsonBlockComponent.tsx";
 
-const CommentsDummyjson = () => {
+const CommentsDummyjsonComponent = () => {
     const [arrCommentsDummyjson, setArrCommentsDummyjson] = useState<ICommentDummyjson[]>([])
     useEffect(() => {
         usersDumyService.getCommentsDummy()
@@ -14,10 +14,10 @@ const CommentsDummyjson = () => {
     }, []);
     return (
         <>
-            {arrCommentsDummyjson.map(comment => <CommentDummyjsonBlock key={comment.id} comment={comment}/>)}
+            {arrCommentsDummyjson.map(comment => <CommentDummyjsonBlockComponent key={comment.id} comment={comment}/>)}
 
         </>
     );
 };
 
-export default CommentsDummyjson;
+export default CommentsDummyjsonComponent;

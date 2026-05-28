@@ -1,9 +1,9 @@
 import  {useEffect, useState} from 'react';
 import type {IUser} from "../../models/UsersJsonplaceholderModel.ts";
 import {usersService} from "../../services/Api.Jsonplaceholder.ts";
-import UserBlock from "../UserBlock/UserBlock.tsx";
+import UserJsonplaceholderBlockComponent from "../UserJsonplaceholderBlockComponent/UserJsonplaceholderBlockComponent.tsx";
 
-const UsersJsonplaceholder = () => {
+const UsersJsonplaceholderComponent = () => {
     const [arrUsersJsonplaceholder, setArrUsersJsonplaceholder] = useState<IUser[]>([]);
     useEffect(()=>{
         usersService.getUsers()
@@ -14,9 +14,9 @@ const UsersJsonplaceholder = () => {
 
     return (
         <>
-            {arrUsersJsonplaceholder.map(user => <UserBlock key={user.id} user={user}/>)}
+            {arrUsersJsonplaceholder.map(user => <UserJsonplaceholderBlockComponent key={user.id} user={user}/>)}
         </>
     );
 };
 
-export default UsersJsonplaceholder;
+export default UsersJsonplaceholderComponent;

@@ -1,12 +1,12 @@
 import type {ICommentJsonplaceholder} from "../../models/CommentJsonplaceholderModel.ts";
 import type {FC} from "react";
-import "./CommentBlock.css"
+import "./CommentJsonplaceholderBlockComponent.css"
 
 type CommentJasPropsType = {
     comment:ICommentJsonplaceholder;
 }
 
-const CommentsJsonplaceholderBlock:FC<CommentJasPropsType> = ({comment}) => {
+const CommentsJsonplaceholderBlockComponent:FC<CommentJasPropsType> = ({comment}) => {
     return (
         <div className={"CommentBlockClass"}>
             <p>{comment.body}</p>
@@ -15,4 +15,4 @@ const CommentsJsonplaceholderBlock:FC<CommentJasPropsType> = ({comment}) => {
     );
 };
 
-export default CommentsJsonplaceholderBlock;
+export default CommentsJsonplaceholderBlockComponent;

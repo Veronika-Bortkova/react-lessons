@@ -1,11 +1,11 @@
 import  {type FC} from 'react';
 import type {IUserDummy} from "../../models/UsersDummyM odel.ts";
-import "./UserDummyBlock.css"
+import "./UserDummyBlockComponent.css"
 type UserDummyPropsType = {
     UserDummy:IUserDummy
 }
 
-const UserDummyBlock:FC<UserDummyPropsType> = ({UserDummy}) => {
+const UserDummyBlockComponent:FC<UserDummyPropsType> = ({UserDummy}) => {
     return (
         <div className={"UserBlockDummyClass"}>
             <h2>{UserDummy.firstName} {UserDummy.lastName}</h2>
@@ -15,4 +15,4 @@ const UserDummyBlock:FC<UserDummyPropsType> = ({UserDummy}) => {
     );
 };
 
-export default UserDummyBlock;
+export default UserDummyBlockComponent;

@@ -1,9 +1,9 @@
 import  {useEffect, useState} from 'react';
 import type {IPostJsonplaceholder} from "../../models/PostJsonplaceholderModel.ts";
 import {usersService} from "../../services/Api.Jsonplaceholder.ts";
-import PostBlock from "../PostBlock/PostBlock.tsx";
+import PostJsonplaceholdeBlockComponent from "../PostPostJsonplaceholdeBlockComponent/PostJsonplaceholdeBlockComponent.tsx";
 
-const PostsJsonplaceholder = () => {
+const PostsJsonplaceholderComponent = () => {
     const [arrPostsJsonplaceholder, setArrPostsJsonplaceholder] = useState<IPostJsonplaceholder[]>([]);
     useEffect(() => {
         usersService.getPosts()
@@ -15,10 +15,10 @@ const PostsJsonplaceholder = () => {
 
     return (
         <>
-            {arrPostsJsonplaceholder.map(post => <PostBlock key = {post.id} post={post}/>)}
+            {arrPostsJsonplaceholder.map(post => <PostJsonplaceholdeBlockComponent key = {post.id} post={post}/>)}
 
         </>
     );
 };
 
-export default PostsJsonplaceholder;
+export default PostsJsonplaceholderComponent;

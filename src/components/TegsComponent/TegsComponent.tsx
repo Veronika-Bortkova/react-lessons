@@ -2,7 +2,7 @@ import  {type FC} from 'react';
 type TagsPropsType ={
     tags: string[];
 }
-const Tegs:FC<TagsPropsType> = ({tags}) => {
+const TegsComponent:FC<TagsPropsType> = ({tags}) => {
 
     return (
         <>
@@ -11,4 +11,4 @@ const Tegs:FC<TagsPropsType> = ({tags}) => {
     );
 };
 
-export default Tegs;
+export default TegsComponent;

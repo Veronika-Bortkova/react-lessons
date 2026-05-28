@@ -1,10 +1,10 @@
 
-import PostsDummyjson from "../components/PostsDummyjson/PostsDummyjson.tsx";
+import PostsDummyjsonComponent from "../components/PostsDummyjsonComponent/PostsDummyjsonComponent.tsx";
 
 const PostsDummyjsonPage = () => {
     return (
         <div>
-            <PostsDummyjson/>
+            <PostsDummyjsonComponent/>
         </div>
     );
 };

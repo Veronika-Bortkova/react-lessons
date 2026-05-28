@@ -1,10 +1,10 @@
 
-import CommentsDummyjson from "../components/CommentsDummyjson/CommentsDummyjson.tsx";
+import CommentsDummyjsonComponent from "../components/CommentsDummyjsonComponent/CommentsDummyjsonComponent.tsx";
 
 const CommentsDummyjsonPage = () => {
     return (
         <>
-            <CommentsDummyjson/>
+            <CommentsDummyjsonComponent/>
         </>
     );
 };

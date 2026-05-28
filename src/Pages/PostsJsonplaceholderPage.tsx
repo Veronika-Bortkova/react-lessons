@@ -1,10 +1,10 @@
 
-import PostsJsonplaceholder from "../components/PostsJsonplaceholder/PostsJsonplaceholder.tsx";
+import PostsJsonplaceholderComponent from "../components/PostsJsonplaceholderComponent/PostsJsonplaceholderComponent.tsx";
 
 const PostsJsonplaceholderPage = () => {
     return (
         <>
-            <PostsJsonplaceholder/>
+            <PostsJsonplaceholderComponent/>
         </>
     );
 };

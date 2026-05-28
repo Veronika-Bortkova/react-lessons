@@ -1,12 +1,12 @@
 import {type FC} from 'react';
-import "./PostsBlock.css"
+import "./PostsPostJsonplaceholdeBlockComponent.css"
 import type {IPostJsonplaceholder} from "../../models/PostJsonplaceholderModel.ts";
 type PostBlockPropsType = {
     post:IPostJsonplaceholder
 }
 
 
-const PostBlock:FC<PostBlockPropsType> = ({post}) => {
+const PostJsonplaceholdeBlockComponent:FC<PostBlockPropsType> = ({post}) => {
     return (
         <div className={"PostsBlockClass"}>
             <h2>{post.title}</h2>
@@ -15,4 +15,4 @@ const PostBlock:FC<PostBlockPropsType> = ({post}) => {
     );
 };
 
-export default PostBlock;
+export default PostJsonplaceholdeBlockComponent;

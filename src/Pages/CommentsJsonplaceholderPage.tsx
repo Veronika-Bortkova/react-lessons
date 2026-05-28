@@ -1,9 +1,9 @@
-import CommentsJsonplaceholder from "../components/CommentsJsonplaceholder/CommentsJsonplaceholder.tsx";
+import CommentsJsonplaceholderComponent from "../components/CommentsJsonplaceholderComponent/CommentsJsonplaceholderComponent.tsx";
 
 const CommentsJsonplaceholderPage = () => {
     return (
         <>
-            <CommentsJsonplaceholder/>
+            <CommentsJsonplaceholderComponent/>
         </>
     );
 };

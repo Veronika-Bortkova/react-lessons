@@ -1,10 +1,10 @@
-import UsersDummyjson from "../components/UsersDummyjson/UsersDummyjson.tsx";
+import UsersDummyjsonComponent from "../components/UsersDummyjsonComponent/UsersDummyjsonComponent.tsx";
 
 
 const UsersDummyjsonPage = () => {
     return (
         <div>
-            <UsersDummyjson/>
+            <UsersDummyjsonComponent/>
         </div>
     );
 };

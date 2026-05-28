@@ -1,9 +1,9 @@
 import  {useEffect, useState} from 'react';
 import type {IUserDummy} from "../../models/UsersDummyM odel.ts";
 import {usersDumyService} from "../../services/Api.Dummyjson.ts";
-import UserDummyBlock from "../userDummyBlock/userDummyBlock.tsx";
+import UserDummyBlockComponent from "../userDummyBlockComponent/userDummyBlockComponent.tsx";
 
-const UsersDummyjson = () => {
+const UsersDummyjsonComponent = () => {
 
     const [arrUsersDummyjson, setArrUsersDummyjson] = useState<IUserDummy[]>([]);
     useEffect(() => {
@@ -15,10 +15,10 @@ const UsersDummyjson = () => {
     }, []);
     return (
         <>
-            {arrUsersDummyjson.map(userDummy => <UserDummyBlock key = {userDummy.id} UserDummy={userDummy}/>)}
+            {arrUsersDummyjson.map(userDummy => <UserDummyBlockComponent key = {userDummy.id} UserDummy={userDummy}/>)}
 
         </>
     );
 };
 
-export default UsersDummyjson;
+export default UsersDummyjsonComponent;
