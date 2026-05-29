@@ -1,9 +1,12 @@
-import {Outlet} from "react-router-dom";
+import PaginationComponent from "../components/pagination/paginationComponent.tsx";
+import SomeComponent from "../components/SomeComponent/SomeComponent.tsx";
+
 
 const MainLayout = () => {
     return (
         <div>
-            <Outlet/>
+        <SomeComponent/>
+        <PaginationComponent/>
         </div>
     );
 };
