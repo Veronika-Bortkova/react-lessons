@@ -22,5 +22,5 @@ const SomeComponent = () => {
             </div>
     );
 };
-
+//просто создаю ветку
 export default SomeComponent;
