@@ -1,11 +1,16 @@
 import {createBrowserRouter} from "react-router-dom";
-import MainLayout from "../layouts/MainLayout.tsx";
+import MainLayout from "../Layouts/MainLayout.tsx";
+import FormPage from "../pages/FormPage.tsx";
+
 
 
 
 
 export const routes = createBrowserRouter([
-    {path:"/", element: <MainLayout/>,}
+    {path:"/", element: <MainLayout/>, children:[
+            {path: "/", element:<FormPage/>}
+
+        ]}
 
 
 ])
