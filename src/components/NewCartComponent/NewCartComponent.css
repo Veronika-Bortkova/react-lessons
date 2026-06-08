@@ -1,0 +1,11 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    gap: 20px;
+    margin-left: 25px;
+}
+
+#brand::placeholder{
+
+}

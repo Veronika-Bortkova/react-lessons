@@ -1,0 +1,7 @@
+.carBlock {
+    margin: 25px;
+    border: silver 2px solid;
+    background: #e6fff7;
+    border-radius: 5px;
+    padding: 5px 25px;
+}

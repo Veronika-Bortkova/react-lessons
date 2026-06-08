@@ -1,0 +1,23 @@
+ul {
+    list-style-type: none; /* Убирает маркеры/точки */
+    margin: 0;             /* Убирает внешние отступы браузера */
+    padding: 0;            /* Убирает внутренние отступы браузера */
+    display: flex;
+    gap: 25px;
+    margin: 25px;
+}
+
+a {
+    text-decoration: none; /* Убирает нижнее подчеркивание */
+    color: inherit;        /* Ссылка наследует цвет текста у своего родителя */
+    cursor: pointer;       /* Сохраняет палец при наведении */
+
+}
+
+a:hover {
+    text-decoration: underline;/* Становится жирным при наведении */
+}
+
+a.active {
+    text-decoration: underline; /* Оставляет текст подчеркнутым */
+}
