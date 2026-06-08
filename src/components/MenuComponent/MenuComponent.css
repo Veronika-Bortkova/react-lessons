@@ -8,16 +8,16 @@ ul {
 }
 
 a {
-    text-decoration: none; /* Убирает нижнее подчеркивание */
-    color: inherit;        /* Ссылка наследует цвет текста у своего родителя */
-    cursor: pointer;       /* Сохраняет палец при наведении */
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
 
 }
 
 a:hover {
-    text-decoration: underline;/* Становится жирным при наведении */
+    text-decoration: underline;
 }
 
 a.active {
-    text-decoration: underline; /* Оставляет текст подчеркнутым */
+    text-decoration: underline;
 }

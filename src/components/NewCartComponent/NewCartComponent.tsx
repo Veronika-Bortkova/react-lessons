@@ -17,7 +17,7 @@ const NewCartComponent = () => {
         register,
         reset,
         formState: {errors, isValid},
-    } = useForm<IFormProp>({mode: "all", resolver: joiResolver(carValidator)});//внутри функции юзформ передаем обьект настроек - в нем можно выбрать на какие действия будет проходить. joiResolver — это специальный адаптер, который берет правила из userValidator и переводит их на «язык», понятный для react-hook-form валидация формы
+    } = useForm<IFormProp>({mode: "all", resolver: joiResolver(carValidator)});
     const customHandler = (formDataProps:IFormProp)=>{
         postCar(formDataProps);
         reset();//очищаем форму после отправки
