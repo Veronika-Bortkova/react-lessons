@@ -20,7 +20,7 @@ const NewCartComponent = () => {
     } = useForm<IFormProp>({mode: "all", resolver: joiResolver(carValidator)});
     const customHandler = (formDataProps:IFormProp)=>{
         postCar(formDataProps);
-        reset();//очищаем форму после отправки
+        reset();//очищуєм форму після відправки
     };
 
     return (
