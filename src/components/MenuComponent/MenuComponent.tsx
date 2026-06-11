@@ -8,11 +8,11 @@ interface IMenuElementProps{
 
 const MenuComponent:FC<IMenuElementProps> = ({form, children}) => {
     return (
-        <div>
+        <>
 
                 <li> <NavLink to={form}>{children}</NavLink></li>
 
-        </div>
+        </>
     );
 };
 
