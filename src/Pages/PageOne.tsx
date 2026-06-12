@@ -2,7 +2,9 @@ import UsersComponent from "../components/UsersComponent/UsersComponent.tsx";
 
 
 const PageOne = () => {
-    console.log("PageOne")
+
+    console.log("PageOne");
+
     return (
         <>
             Page one

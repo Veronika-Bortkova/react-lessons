@@ -1,5 +1,6 @@
 import UserComponent from "../UserComponent/UserComponent.tsx";
-import {useCallback, useEffect, useMemo, useState} from "react";
+import {useCallback, useMemo} from "react";
+import {useFetch} from "../../hooks/Usefetch.tsx";
 
 
 
@@ -11,16 +12,12 @@ const UsersComponent = () => {
     const foo = useCallback(()=> {
         console.log("test")
     },[]);//для того чтобы закешевать функцию испольpуем хук юзколбек - тогда при передаче пропса на компонент на который была применена мемо он не будет каждый раз перерендериватся, потому что пропс ссылочного типа будет приходить один и тот же. В синтаксисе юзколбека массив зависимостей, работает так же как в юзэффекте, если будет аргумент и он будет изменяться, тогда перендер произойдет. Если нет, то нет
-    const [users, setUsers] = useState([]);
-    useEffect(() => {
-        fetch("https://jsonplaceholder.typicode.com/users")
-            .then(value => value.json())
-            .then(value => setUsers(value) )
-    }, []);
+    const users = useFetch();
+
     return (
         <div>
             Users
-            <UserComponent foo={foo} arr={arr}/>
+            {users.map(user => <UserComponent item={user} arr={arr} foo={foo} key={user.id}/>)}
 
         </div>
     );
