@@ -6,9 +6,10 @@ const MainLayout = () => {
     return (
         <div>
             MainLayout
-            <div>
+            <hr/>
+
             <Outlet/>
-            </div>
+
         </div>
     );
 };
