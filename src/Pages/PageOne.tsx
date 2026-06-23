@@ -1,14 +1,11 @@
-import UsersComponent from "../components/UsersComponent/UsersComponent.tsx";
-import {Outlet} from "react-router-dom";
+import ComponentA from "../components/ComponentA/ComponentA.tsx";
 
 
 const PageOne = () => {
     return (
         <div>
             Page One
-            <UsersComponent/>
-            <hr/>
-            <Outlet/>
+            <ComponentA/>
         </div>
     );
 };
