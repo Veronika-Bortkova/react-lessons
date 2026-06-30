@@ -1,19 +1,20 @@
 
-import {useDispatch} from "react-redux";
-import {useAppSelector,  usersSliceActions} from "../../main.tsx";
+
+
 import { useEffect} from "react";
+import {useAppSelector} from "../../redux/hooks/useAppSelector.tsx";
+
+import {useAppDispatch} from "../../redux/hooks/useAppDispatch.ts";
+import {usersSliceActions} from "../../redux/slices/userSlice/userSlice.ts";
 
 
 const UsersPage = () => {
     // const stateType = useAppSelector(state => state);
     const {users} = useAppSelector(({userSlice}) => userSlice);
     // console.log(userSlice);
-    const dispatch = useDispatch();// Он связывает ваш конкретный React-компонент с глобальным хранилищем store, которое вы обернули в <Provider> на самом верхнем уровне приложения. Если нужно изменить данные в Redux — создаем dispatch через useDispatch и отправляем экшен
+    const dispatch = useAppDispatch();// Он связывает ваш конкретный React-компонент с глобальным хранилищем store, которое вы обернули в <Provider> на самом верхнем уровне приложения. Если нужно изменить данные в Redux — создаем dispatch через useDispatch и отправляем экшен
     useEffect(() => {
-        fetch("https://jsonplaceholder.typicode.com/users")
-            .then(value => value.json())
-            // .then(value => dispatch(userSlice.actions.loadUsers(value)))
-            .then(value => dispatch(usersSliceActions.loadUsers(value)))
+        dispatch(usersSliceActions.loadUsers());
     }, []);
 
     return (
